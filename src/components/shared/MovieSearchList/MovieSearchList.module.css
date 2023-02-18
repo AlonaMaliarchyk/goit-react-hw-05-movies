@@ -1,0 +1,15 @@
+.searchGallery {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.seachList {
+    display: flex;
+}
+
+.wrapSearchList {
+    width: calc((100% - 80px) / 4);
+}

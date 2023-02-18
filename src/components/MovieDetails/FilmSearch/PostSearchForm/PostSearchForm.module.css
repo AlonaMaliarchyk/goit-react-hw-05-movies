@@ -1,0 +1,14 @@
+.btn {
+    padding: 3px;
+    margin: 10px;
+    border-radius: 3px;
+    border-style: none;
+    background: white;
+    outline: 1px solid black;
+}
+
+.btn:hover,
+.btn:focus {
+    color: red;
+    outline: 1px solid red;
+}

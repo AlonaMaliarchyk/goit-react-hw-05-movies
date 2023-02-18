@@ -1,0 +1,43 @@
+.nav {
+    display: flex;
+    justify-content: flex-start;
+    color: black;
+    margin-bottom: 10px;
+    /* padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px; */
+    outline: 1px solid grey;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background: content-box radial-gradient(crimson, skyblue);
+
+}
+
+.link {
+    font-size: 20px;
+    font-weight: 400;
+    padding: 10px;
+}
+
+.navLink:global(.active) {
+    font-weight: bold;
+    color: red;
+}
+
+
+.link:not(:last-child) {
+    margin-right: 5px;
+}
+
+nav:active {
+    color: red;
+}
+
+li,
+ul,
+a {
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,57 @@
+.container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+
+}
+
+.galleryWrap {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.warapInform {
+    display: flex;
+    flex-basis: 60%;
+}
+
+.wrap {
+    display: flex;
+    gap: 20px;
+    font-weight: bold;
+}
+
+.wrapImg {
+    display: flex;
+    flex-basis: 40%;
+}
+
+.movieDetal {
+    display: flex;
+}
+
+.link:hover,
+.link:hover,
+:focus {
+    color: red;
+
+}
+
+.btn {
+    padding: 10px;
+    margin: 10px;
+    border-radius: 3px;
+    border-style: none;
+    background: white;
+    outline: 1px solid black;
+}
+
+/* .btn:active {
+    color: red;
+} */
+.btn:hover,
+.btn:focus {
+    color: red;
+    outline: 1px solid red;
+}

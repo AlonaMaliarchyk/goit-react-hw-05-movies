@@ -1,0 +1,17 @@
+.castGallery {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.castItem {
+    width: 90px;
+    /* display: flex; */
+    /* width: calc((100% - 80px) / 4); */
+}
+
+/* .wrapList {
+    width: calc((100% - 80px) / 4);
+} */
