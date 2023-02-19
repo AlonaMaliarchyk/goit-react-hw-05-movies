@@ -11,7 +11,7 @@
     gap: 20px;
 }
 
-.warapInform {
+.wrapInform {
     display: flex;
     flex-basis: 60%;
 }

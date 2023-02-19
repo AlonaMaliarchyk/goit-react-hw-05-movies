@@ -1,7 +1,7 @@
-import {getSearchMovie}  from "../../shared/ApiService/ApiService";
+import {getSearchMovie}  from "../shared/ApiService/ApiService";
 import { useState, useEffect } from "react";
-import PostSearchForm from "./PostSearchForm/PostSearchForm";
-import MovieSearchList from "../../shared/MovieSearchList/MovieSearchList";
+import MovieSearchForm from "./MovieSearchForm/MovieSearchForm";
+import MovieSearchList from "../shared/MovieSearchList/MovieSearchList";
 import { useSearchParams } from "react-router-dom";
 import Notiflix from 'notiflix';
 
@@ -12,8 +12,8 @@ const FilmSerch = () => {
     const searchMovie = (value) => {
         if (value) {
             setSearchParams({ 'query': value });
-        } 
-    }
+        }
+    };
     const query = searchParams.get('query');
 
     useEffect(() => {
@@ -28,15 +28,15 @@ const FilmSerch = () => {
             catch  {
                 Notiflix.Notify.failure('Oops – something went wrong!');
             }
-        }
+        };
         fetchMovie();
     }, [query]);
     return (
         <>
-            <PostSearchForm onSubmit={searchMovie} />
+            <MovieSearchForm onSubmit={searchMovie} />
             <MovieSearchList films={ movies } />
         </>
     )
-}
+};
 
 export default FilmSerch;

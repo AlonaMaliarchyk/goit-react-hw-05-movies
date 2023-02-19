@@ -7,5 +7,5 @@ const HomePage = () => {
             <TrendingMovie/>
         </>
     )
-}
+};
 export default HomePage;

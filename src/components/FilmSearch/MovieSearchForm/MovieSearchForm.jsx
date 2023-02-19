@@ -1,13 +1,13 @@
 
 import PropTypes from "prop-types";
-import css from "./PostSearchForm.module.css"
+import css from "./MovieSearchForm.module.css"
 
-const PostSearchForm = ({ onSubmit }) => {
+const MovieSearchForm = ({ onSubmit }) => {
     const handleSubmit = event => {
         event.preventDefault();
         onSubmit(event.target.search.value);
         event.target.reset();
-    }
+    };
     return (
         <form onSubmit={handleSubmit}>
             <input
@@ -15,11 +15,11 @@ const PostSearchForm = ({ onSubmit }) => {
                 type="text"
                 placeholder="Movie name">
                 </input>
-            <button  className={css.btn} type="submit">Search</button>    
+            <button className={css.btn} type="submit">Search</button>
         </form>
     )
-}
-export default PostSearchForm;
-PostSearchForm.propTypes = {
+};
+export default MovieSearchForm;
+MovieSearchForm.propTypes = {
     onSubmit: PropTypes.func.isRequired,
-}
+};
